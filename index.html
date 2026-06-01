@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Quanta Aptus là phương pháp chỉnh sửa tư duy học tập, áp dụng cho IB, IGCSE, A-Level, AP và các chương trình học thuật khác."
+      content="Quanta Aptus provides evidence-based metacognitive diagnostics for academic performance across IB, IGCSE, A-Level, AP, and future curricula."
     />
-    <title>Quanta Aptus | Cognitive Correction Method</title>
+    <title>Quanta Aptus | Metacognitive Diagnostics</title>
     <link rel="shortcut icon" href="favicon.ico?v=3" />
     <link rel="icon" type="image/png" href="assets/favicon-app-32x32.png?v=3" sizes="32x32" />
     <link rel="icon" type="image/png" href="assets/favicon-app-64x64.png?v=3" sizes="64x64" />
     <link rel="icon" type="image/png" href="assets/favicon-app-192x192.png?v=3" sizes="192x192" />
     <link rel="icon" type="image/png" href="assets/favicon-app-512.png?v=3" sizes="512x512" />
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Noto+Sans:wght@400;500;700;900&family=Saira+Condensed:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -25,17 +31,24 @@
         <span class="brand-name">Quanta Aptus</span>
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" data-menu-toggle>
-        <span></span>
-        <span></span>
-      </button>
-
       <nav class="site-nav" data-nav>
-        <a href="#philosophy">Cốt lõi</a>
-        <a href="#programs">Ứng dụng</a>
-        <a href="#method">Phương pháp</a>
-        <a href="#enroll">Chẩn đoán</a>
+        <a href="#philosophy" data-i18n="navCore">Core</a>
+        <a href="#programs" data-i18n="navApplication">Application</a>
+        <a href="#method" data-i18n="navMethod">Method</a>
+        <a href="#enroll" data-i18n="navDiagnosis">Diagnosis</a>
       </nav>
+
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button class="active" type="button" data-lang-option="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-option="vi" aria-pressed="false">VI</button>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" data-menu-toggle>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
 
     <main id="top">
@@ -48,105 +61,115 @@
         </div>
 
         <div class="hero-content">
-            <p class="eyebrow">Cognitive correction method</p>
-            <h1 id="hero-title">Chỉnh sửa tư duy. Tạo ra kết quả học tập.</h1>
-            <p class="hero-copy">
-              Một lõi phương pháp có thể áp dụng lên IB, IGCSE, A-Level, AP và các chương trình sau này.
-            </p>
-            <div class="hero-actions">
-              <a class="button primary" href="#enroll">Chẩn đoán tư duy</a>
-              <a class="button secondary" href="#programs">Xem ứng dụng</a>
-            </div>
+          <p class="eyebrow" data-i18n="heroEyebrow">Quanta Aptus Method</p>
+          <h1 id="hero-title" data-i18n="heroTitle">
+            Evidence-based metacognitive diagnostics for academic performance.
+          </h1>
+          <p class="hero-copy" data-i18n="heroCopy">
+            Quanta Aptus identifies where academic performance breaks down — knowledge, strategy, monitoring, or
+            regulation — then rebuilds the learner’s method of thinking through structured intervention.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#enroll" data-i18n="heroPrimary">Start diagnostic</a>
+            <a class="button secondary" href="#method" data-i18n="heroSecondary">See method</a>
+          </div>
         </div>
       </section>
 
-      <section class="trust-strip" aria-label="Định vị Quanta Aptus">
+      <section class="trust-strip" aria-label="Quanta Aptus diagnostic layers">
         <div class="strip-item">
-          <strong>Method-first</strong>
-          <span>Tư duy là lõi.</span>
+          <strong data-i18n="stripKnowledgeTitle">Knowledge</strong>
+          <span data-i18n="stripKnowledgeCopy">What the learner knows.</span>
         </div>
         <div class="strip-item">
-          <strong>Program-flexible</strong>
-          <span>Chương trình là tầng ứng dụng.</span>
+          <strong data-i18n="stripStrategyTitle">Strategy</strong>
+          <span data-i18n="stripStrategyCopy">How the learner approaches tasks.</span>
         </div>
         <div class="strip-item">
-          <strong>Output-measured</strong>
-          <span>Điểm số và hiệu quả là đầu ra.</span>
+          <strong data-i18n="stripMonitoringTitle">Monitoring</strong>
+          <span data-i18n="stripMonitoringCopy">How the learner detects errors.</span>
+        </div>
+        <div class="strip-item">
+          <strong data-i18n="stripRegulationTitle">Regulation</strong>
+          <span data-i18n="stripRegulationCopy">How the learner adjusts.</span>
         </div>
       </section>
 
       <section class="section intro-section" id="philosophy">
         <div class="section-heading">
-          <p class="eyebrow">Cốt lõi sản phẩm</p>
-          <h2>Sửa cách nghĩ trước khi sửa bài làm.</h2>
+          <p class="eyebrow" data-i18n="coreEyebrow">Product core</p>
+          <h2 data-i18n="coreTitle">Performance breaks at the thinking layer.</h2>
+          <p class="section-copy" data-i18n="coreCopy">
+            Quanta Aptus treats grades as output data, not the starting point.
+          </p>
         </div>
         <figure class="visual-card large-visual">
           <img src="assets/thinking-visual.png" alt="Abstract visual for cognitive correction" />
-          <figcaption>Thinking pattern scan</figcaption>
+          <figcaption data-i18n="coreCaption">Metacognitive scan</figcaption>
         </figure>
       </section>
 
       <section class="section visual-story">
         <figure class="visual-card">
           <img src="assets/thinking-visual.png" alt="Abstract thinking correction visual" />
-          <figcaption>Diagnose</figcaption>
+          <figcaption data-i18n="storyDiagnose">Diagnose</figcaption>
         </figure>
         <figure class="visual-card">
           <img src="assets/layers-visual.png" alt="Abstract curriculum layers visual" />
-          <figcaption>Apply</figcaption>
+          <figcaption data-i18n="storyRebuild">Rebuild</figcaption>
         </figure>
         <figure class="visual-card">
           <img src="assets/output-visual.png" alt="Abstract output measurement visual" />
-          <figcaption>Measure</figcaption>
+          <figcaption data-i18n="storyMeasure">Measure</figcaption>
         </figure>
       </section>
 
       <section class="section programs-section" id="programs">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Ứng dụng theo chương trình</p>
-          <h2>Một lõi. Nhiều chương trình.</h2>
+          <p class="eyebrow" data-i18n="programsEyebrow">Curriculum-flexible</p>
+          <h2 data-i18n="programsTitle">One diagnostic core. Multiple academic systems.</h2>
         </div>
 
         <div class="program-grid compact-grid">
           <article class="program-card compact-card">
             <span class="program-code">IB</span>
-            <h3>Concept clarity</h3>
+            <h3 data-i18n="programIB">Concept clarity</h3>
           </article>
 
           <article class="program-card compact-card">
             <span class="program-code">IGCSE</span>
-            <h3>Topic structure</h3>
+            <h3 data-i18n="programIGCSE">Topic structure</h3>
           </article>
 
           <article class="program-card compact-card">
             <span class="program-code">A/AP</span>
-            <h3>Precision reasoning</h3>
+            <h3 data-i18n="programAAP">Precision reasoning</h3>
           </article>
 
           <article class="program-card compact-card">
             <span class="program-code">NEXT</span>
-            <h3>Future curriculum</h3>
+            <h3 data-i18n="programNext">Future curriculum</h3>
           </article>
         </div>
       </section>
 
       <section class="section method-section" id="method">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Phương pháp Quanta</p>
-          <h2>Diagnose. Reframe. Apply. Measure.</h2>
+          <p class="eyebrow" data-i18n="methodEyebrow">Diagnostic architecture</p>
+          <h2 data-i18n="methodTitle">Knowledge. Strategy. Monitoring. Regulation.</h2>
         </div>
 
         <div class="method-layout">
           <div class="method-panel">
-            <button class="method-tab active" type="button" data-tab="diagnose">Diagnose</button>
-            <button class="method-tab" type="button" data-tab="reframe">Reframe</button>
-            <button class="method-tab" type="button" data-tab="apply">Apply</button>
-            <button class="method-tab" type="button" data-tab="measure">Measure</button>
+            <button class="method-tab active" type="button" data-tab="knowledge" data-i18n="tabKnowledge">Knowledge</button>
+            <button class="method-tab" type="button" data-tab="strategy" data-i18n="tabStrategy">Strategy</button>
+            <button class="method-tab" type="button" data-tab="monitoring" data-i18n="tabMonitoring">Monitoring</button>
+            <button class="method-tab" type="button" data-tab="regulation" data-i18n="tabRegulation">Regulation</button>
           </div>
           <div class="method-detail" data-method-detail>
-            <p class="method-kicker">Bước 1</p>
-            <h3>Quét pattern tư duy.</h3>
-            <p>Đọc bài làm như dữ liệu về cách học viên nghĩ.</p>
+            <p class="method-kicker">Layer 01</p>
+            <h3>Find missing concepts.</h3>
+            <p>Locate gaps in understanding before drilling exercises.</p>
           </div>
         </div>
       </section>
@@ -155,81 +178,83 @@
         <div class="outcome-visual">
           <figure class="visual-card large-visual">
             <img src="assets/output-visual.png" alt="Abstract output analytics visual" />
-            <figcaption>Learning output</figcaption>
+            <figcaption data-i18n="outcomeCaption">Academic output</figcaption>
           </figure>
           <div class="section-heading compact-heading">
-            <p class="eyebrow">Đầu ra đo được</p>
-            <h2>Score. Efficiency. Transfer.</h2>
+            <p class="eyebrow" data-i18n="outcomeEyebrow">Measured output</p>
+            <h2 data-i18n="outcomeTitle">Score. Efficiency. Transfer.</h2>
           </div>
         </div>
 
         <div class="outcome-grid compact-outcomes">
           <article class="outcome-card">
-            <strong>Score</strong>
-            <span>Điểm số.</span>
+            <strong data-i18n="outcomeScoreTitle">Score</strong>
+            <span data-i18n="outcomeScoreCopy">Academic performance.</span>
           </article>
           <article class="outcome-card">
-            <strong>Efficiency</strong>
-            <span>Hiệu quả học.</span>
+            <strong data-i18n="outcomeEfficiencyTitle">Efficiency</strong>
+            <span data-i18n="outcomeEfficiencyCopy">Less wasted effort.</span>
           </article>
           <article class="outcome-card">
-            <strong>Transfer</strong>
-            <span>Chuyển giao tư duy.</span>
+            <strong data-i18n="outcomeTransferTitle">Transfer</strong>
+            <span data-i18n="outcomeTransferCopy">Method moves across curricula.</span>
           </article>
         </div>
       </section>
 
       <section class="section architecture-section">
         <div class="section-heading compact-heading">
-          <p class="eyebrow">Product architecture</p>
-          <h2>Từ tư duy đến kết quả.</h2>
+          <p class="eyebrow" data-i18n="flowEyebrow">Intervention flow</p>
+          <h2 data-i18n="flowTitle">Diagnostic. Protocol. Output.</h2>
         </div>
 
         <div class="architecture-grid">
           <div class="architecture-step">
             <span>01</span>
-            <strong>Thinking Scan</strong>
+            <strong data-i18n="flowStepOne">Metacognitive Scan</strong>
           </div>
           <div class="architecture-step">
             <span>02</span>
-            <strong>Correction Protocol</strong>
+            <strong data-i18n="flowStepTwo">Structured Intervention</strong>
           </div>
           <div class="architecture-step">
             <span>03</span>
-            <strong>Academic Output</strong>
+            <strong data-i18n="flowStepThree">Academic Performance</strong>
           </div>
         </div>
       </section>
 
       <section class="enroll-section" id="enroll">
         <div class="enroll-copy">
-          <p class="eyebrow">Cognitive scan</p>
-          <h2>Đặt lịch chẩn đoán tư duy.</h2>
-          <p>Biết học viên đang kẹt ở kiến thức, chiến lược học hay cơ chế tư duy.</p>
+          <p class="eyebrow" data-i18n="enrollEyebrow">Diagnostic scan</p>
+          <h2 data-i18n="enrollTitle">Book a metacognitive diagnostic.</h2>
+          <p data-i18n="enrollCopy">
+            Identify whether the learner is blocked by knowledge, strategy, monitoring, or regulation.
+          </p>
         </div>
 
         <form class="enroll-form" data-enroll-form>
           <label>
-            Họ và tên học viên
-            <input type="text" name="name" placeholder="Nguyễn Minh Anh" required />
+            <span data-i18n="formName">Learner name</span>
+            <input type="text" name="name" placeholder="Alex Nguyen" data-i18n-placeholder="formNamePlaceholder" required />
           </label>
           <label>
-            Số điện thoại liên hệ
+            <span data-i18n="formPhone">Contact phone</span>
             <input type="tel" name="phone" placeholder="09xx xxx xxx" required />
           </label>
           <label>
-            Chương trình muốn áp dụng
+            <span data-i18n="formProgram">Academic program</span>
             <select name="goal" required>
-              <option value="">Chọn chương trình</option>
+              <option value="" data-i18n="formProgramPlaceholder">Select program</option>
               <option>IB</option>
               <option>IGCSE</option>
               <option>A-Level</option>
               <option>AP</option>
-              <option>Chương trình khác</option>
+              <option data-i18n="formProgramOther">Other curriculum</option>
             </select>
           </label>
-          <button class="button primary" type="submit">Gửi yêu cầu</button>
-          <p class="form-note" data-form-note>Phản hồi trong ngày làm việc.</p>
+          <button class="button primary" type="submit" data-i18n="formSubmit">Send request</button>
+          <p class="form-note" data-form-note data-i18n="formNote">Response within one working day.</p>
         </form>
       </section>
     </main>
@@ -238,9 +263,9 @@
       <div class="footer-brand">
         <img src="assets/quanta-aptus-logo-mark.png" alt="" />
         <strong>Quanta Aptus</strong>
-        <span>Cognitive correction method.</span>
+        <span data-i18n="footerLine">Metacognitive diagnostics for academic performance.</span>
       </div>
-      <a href="#top">Lên đầu trang</a>
+      <a href="#top" data-i18n="backTop">Back to top</a>
     </footer>
 
     <script src="script.js"></script>

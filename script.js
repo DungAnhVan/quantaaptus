@@ -27,12 +27,15 @@ const translations = {
     stripMonitoringCopy: "How the learner detects errors.",
     stripRegulationTitle: "Regulation",
     stripRegulationCopy: "How the learner adjusts.",
-    coreEyebrow: "Product core",
-    coreTitle: "Performance breaks at the thinking layer.",
+    coreEyebrow: "Cognitive core",
+    coreTitle: "Rebuild the mechanism that produces the work, not just the work.",
     coreCopy: "Quanta Aptus treats grades as output data, not the starting point.",
+    coreData:
+      "Every piece of work is cognitive data: it reveals how a learner understands, chooses strategy, monitors errors, and self-regulates.",
     coreCaption: "Metacognitive scan",
     storyDiagnose: "Diagnose",
-    storyRebuild: "Rebuild",
+    storyReframe: "Reframe",
+    storyApply: "Apply",
     storyMeasure: "Measure",
     programsEyebrow: "Curriculum-flexible",
     programsTitle: "One diagnostic core. Multiple academic systems.",
@@ -40,12 +43,12 @@ const translations = {
     programIGCSE: "Topic structure",
     programAAP: "Precision reasoning",
     programNext: "Future curriculum",
-    methodEyebrow: "Diagnostic architecture",
-    methodTitle: "Knowledge. Strategy. Monitoring. Regulation.",
-    tabKnowledge: "Knowledge",
-    tabStrategy: "Strategy",
-    tabMonitoring: "Monitoring",
-    tabRegulation: "Regulation",
+    methodEyebrow: "Intervention sequence",
+    methodTitle: "Diagnose. Reframe. Apply. Measure.",
+    tabDiagnose: "Diagnose",
+    tabReframe: "Reframe",
+    tabApply: "Apply",
+    tabMeasure: "Measure",
     outcomeCaption: "Academic output",
     outcomeEyebrow: "Measured output",
     outcomeTitle: "Score. Efficiency. Transfer.",
@@ -94,12 +97,15 @@ const translations = {
     stripMonitoringCopy: "Học sinh nhận ra lỗi ra sao.",
     stripRegulationTitle: "Tự điều chỉnh",
     stripRegulationCopy: "Học sinh sửa hướng khi bị kẹt.",
-    coreEyebrow: "Cốt lõi sản phẩm",
-    coreTitle: "Kết quả đứt gãy ở tầng tư duy.",
+    coreEyebrow: "Cốt lõi nhận thức",
+    coreTitle: "Sửa cơ chế tạo ra bài làm, không chỉ sửa bài làm.",
     coreCopy: "Quanta Aptus xem điểm số là dữ liệu đầu ra, không phải điểm bắt đầu.",
+    coreData:
+      "Mỗi bài làm là dữ liệu nhận thức: nó cho thấy học sinh hiểu gì, chọn chiến lược nào, giám sát lỗi ra sao và tự điều chỉnh thế nào.",
     coreCaption: "Quét siêu nhận thức",
     storyDiagnose: "Chẩn đoán",
-    storyRebuild: "Tái cấu trúc",
+    storyReframe: "Tái cấu trúc",
+    storyApply: "Áp dụng",
     storyMeasure: "Đo đầu ra",
     programsEyebrow: "Linh hoạt theo chương trình",
     programsTitle: "Một lõi chẩn đoán. Nhiều hệ học thuật.",
@@ -107,12 +113,12 @@ const translations = {
     programIGCSE: "Cấu trúc chủ đề",
     programAAP: "Lập luận chính xác",
     programNext: "Chương trình tương lai",
-    methodEyebrow: "Kiến trúc chẩn đoán",
-    methodTitle: "Kiến thức. Chiến lược. Giám sát. Tự điều chỉnh.",
-    tabKnowledge: "Kiến thức",
-    tabStrategy: "Chiến lược",
-    tabMonitoring: "Giám sát",
-    tabRegulation: "Tự điều chỉnh",
+    methodEyebrow: "Trình tự can thiệp",
+    methodTitle: "Diagnose. Reframe. Apply. Measure.",
+    tabDiagnose: "Diagnose",
+    tabReframe: "Reframe",
+    tabApply: "Apply",
+    tabMeasure: "Measure",
     outcomeCaption: "Đầu ra học thuật",
     outcomeEyebrow: "Đầu ra đo được",
     outcomeTitle: "Điểm số. Hiệu quả. Chuyển giao.",
@@ -146,47 +152,47 @@ const translations = {
 
 const methodContent = {
   en: {
-    knowledge: {
-      kicker: "Layer 01",
-      title: "Find missing concepts.",
-      copy: "Locate gaps in understanding before drilling exercises.",
+    diagnose: {
+      kicker: "Step 01",
+      title: "Read the work as cognitive data.",
+      copy: "Locate the breakdown before adding more practice.",
     },
-    strategy: {
-      kicker: "Layer 02",
-      title: "Rebuild task approach.",
-      copy: "Replace random solving with a visible, repeatable method.",
+    reframe: {
+      kicker: "Step 02",
+      title: "Rebuild the thinking mechanism.",
+      copy: "Shift the learner from answer-chasing to structured reasoning.",
     },
-    monitoring: {
-      kicker: "Layer 03",
-      title: "Train error detection.",
-      copy: "Make the learner notice weak assumptions while working.",
+    apply: {
+      kicker: "Step 03",
+      title: "Apply the method to the curriculum.",
+      copy: "Use IB, IGCSE, A-Level, AP, or future programs as the application layer.",
     },
-    regulation: {
-      kicker: "Layer 04",
-      title: "Stabilize self-correction.",
-      copy: "Turn feedback into independent adjustment.",
+    measure: {
+      kicker: "Step 04",
+      title: "Measure academic output.",
+      copy: "Track score, efficiency, repeated errors, and transfer.",
     },
   },
   vi: {
-    knowledge: {
-      kicker: "Tầng 01",
-      title: "Xác định lỗ hổng kiến thức.",
-      copy: "Tìm điểm hiểu sai trước khi tăng bài tập.",
+    diagnose: {
+      kicker: "Bước 01",
+      title: "Đọc bài làm như dữ liệu nhận thức.",
+      copy: "Xác định điểm đứt gãy trước khi tăng thêm bài tập.",
     },
-    strategy: {
-      kicker: "Tầng 02",
-      title: "Tái cấu trúc cách tiếp cận bài.",
-      copy: "Thay việc giải ngẫu nhiên bằng một phương pháp nhìn thấy được và lặp lại được.",
+    reframe: {
+      kicker: "Bước 02",
+      title: "Tái cấu trúc cơ chế tạo ra bài làm.",
+      copy: "Chuyển học sinh từ đuổi đáp án sang lập luận có cấu trúc.",
     },
-    monitoring: {
-      kicker: "Tầng 03",
-      title: "Huấn luyện khả năng phát hiện lỗi.",
-      copy: "Giúp học sinh nhận ra giả định yếu ngay trong lúc làm bài.",
+    apply: {
+      kicker: "Bước 03",
+      title: "Áp dụng phương pháp lên chương trình.",
+      copy: "IB, IGCSE, A-Level, AP hoặc chương trình sau này là tầng ứng dụng.",
     },
-    regulation: {
-      kicker: "Tầng 04",
-      title: "Ổn định cơ chế tự điều chỉnh.",
-      copy: "Biến phản hồi thành khả năng tự sửa hướng.",
+    measure: {
+      kicker: "Bước 04",
+      title: "Đo đầu ra học thuật.",
+      copy: "Theo dõi điểm số, hiệu quả, lỗi lặp lại và khả năng chuyển giao.",
     },
   },
 };
@@ -214,7 +220,7 @@ function syncHeader() {
 }
 
 function getActiveMethodKey() {
-  return document.querySelector(".method-tab.active")?.dataset.tab || "knowledge";
+  return document.querySelector(".method-tab.active")?.dataset.tab || "diagnose";
 }
 
 function renderMethodDetail(tabKey = getActiveMethodKey()) {
